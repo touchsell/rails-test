@@ -13,6 +13,8 @@ You must use Rails 6.0.0 and Ruby 2.6.3.
 ### Node
 
 * name
+* association to 1 organization
+* association to other nodes using parent/children (tree structure)
 
 ## Expected routes
 
