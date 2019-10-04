@@ -4,6 +4,8 @@ We want to create a mini Touch & Sell Studio in Rails. We can create a unique UR
 
 You must use Rails 6.0.0 and Ruby 2.6.3.
 
+This test is expected to take around 2 hours.
+
 ## Models
 
 ### Organization
