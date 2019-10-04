@@ -29,7 +29,6 @@ Nodes should be under organizations
 * `/OOOO/nodes/NNNN` Show a node content: name + children. This URL is also used for destroy
 * `/OOOO/nodes/NNNN/edit` Edit a node's name
 * `/OOOO/nodes/NNNN/new` Create a new node under this one
-* we should also be able to destroy a node
 
 ## Spec
 
