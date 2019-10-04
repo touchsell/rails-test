@@ -6,11 +6,11 @@ You must use Rails 6.0.0 and Ruby 2.6.3.
 
 ## Models
 
-## Organization
+### Organization
 
 * name
 
-## Node
+### Node
 
 * name
 
