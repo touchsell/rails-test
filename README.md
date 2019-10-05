@@ -1,6 +1,10 @@
 # README
 
-We want to create a mini Touch & Sell Studio in Rails. We can create a unique URL for each organization, then each organization can build its own tree structure.
+We want to create a mini Touch & Sell Studio in Rails. Each Organization will have its own URL and will be able to build a tree structure of Nodes.
+
+Organization represents a project/customer/application to build.
+
+A Node is the basic element of the tree structure build for an Organization. There is one root node at the base of the tree structure, then nodes have a parent node and children nodes.
 
 You must use Rails 6.0.0 and Ruby 2.6.3.
 
@@ -15,8 +19,6 @@ This test is expected to take around 2 hours.
 ### Node
 
 * name
-* association to 1 organization
-* association to other nodes using parent/children (tree structure)
 
 ## Expected routes
 
@@ -35,11 +37,11 @@ Nodes should be under organizations
 ## Spec
 
 * The root node of an organization must be browsable immediately after its creation
+* The root node is the only node in an organization without a parent
 * The root node of an organization is not editable and its name is always the name of the organization
 * Destroying a node should destroy all its descendants
 * Destroying an organization should destroy all its nodes
 * Updating a node should touch all its ancestors
-* To improve code readbility, the Node associations for the tree must be named `children` and `parent`
 
 ## Quality Expectations
 
@@ -52,7 +54,7 @@ Nodes should be under organizations
   * controllers
 * secure and prevent any data corruption or security issues
   * each organization should be separated with no way to leak data between them
-* fast and to the point, no unnecessary SQL queries or method calls
+* fast and to the point, caching if possible, no unnecessary SQL queries or method calls
 * DRY, code reuse, patterns reusable in the future, even for a single method in this exercise
 * clear & frequent commits with good messages
 * complete the README section about explanations
@@ -65,8 +67,8 @@ NOT EXPECTED
 
 ## Explanations
 
-Here you will write a report including all design decisions that you made and why you made them.
-Add arguments to your answer.
+Please include a written report including all design decisions that you made and why you made them.
 
 *I used XXXX because that allows me to...*
+
 *I used YYYY because that will simplify the future for...*
