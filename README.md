@@ -37,7 +37,7 @@ Nodes should be under organizations
 ## Spec
 
 * The root node of an organization must be browsable immediately after its creation
-* The root node is the only node in an organization without a parent
+* The root node is the only node of an organization that does not have a parent
 * The root node of an organization is not editable and its name is always the name of the organization
 * Destroying a node should destroy all its descendants
 * Destroying an organization should destroy all its nodes
@@ -53,7 +53,7 @@ Nodes should be under organizations
   * models
   * controllers
 * secure and prevent any data corruption or security issues
-  * each organization should be separated with no way to leak data between them
+  * IMPORTANT: each organization must be strongly separated with no way to reveal nodes of another organization
 * fast and to the point, caching if possible, no unnecessary SQL queries or method calls
 * DRY, code reuse, patterns reusable in the future, even for a single method in this exercise
 * clear & frequent commits with good messages
@@ -62,7 +62,7 @@ Nodes should be under organizations
 NOT EXPECTED
 
 * tests but you can create some if that allows you to speed up development
-* complex UI, basic HTML only, no CSS or Javascript required
+* complex UI, we only need basic HTML, no CSS or Javascript required
 * multiple format requests, only HTML but think about it as a possible evolution
 
 ## Explanations
