@@ -6,7 +6,7 @@ Organization represents a project/customer/application to build.
 
 A Node is the basic element of the tree structure build for an Organization. There is one root node at the base of the tree structure, then nodes have a parent node and children nodes.
 
-You must use Rails 6.0.0 and Ruby 2.6.3.
+You must use the latest version of Rails 6.0.0 and Ruby.
 
 This test is expected to take around 2 hours.
 
