@@ -36,7 +36,7 @@ Nodes should be under organizations
 
 ## Spec
 
-* The root node of an organization must be browsable immediately after its creation
+* The root node of an organization must be browsable immediately after the creation of the organization
 * The root node is the only node of an organization that does not have a parent
 * The root node of an organization is not editable and its name is always the name of the organization
 * Destroying a node should destroy all its descendants
