@@ -1,6 +1,6 @@
 # README
 
-We want to create a mini Touch & Sell Studio in Rails. Each Organization will have its own URL and will be able to build a tree structure of Nodes.
+We want to create a mini Zélit Studio in Rails. Each Organization will have its own URL and will be able to build a tree structure of Nodes.
 
 Organization represents a project/customer/application to build.
 
