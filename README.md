@@ -28,11 +28,13 @@ Organizations URLs should not have a prefix:
 * `/OOOO` Show name of an organization, with a link to its root node. This URL is also used for destroy
 * `/OOOO/edit` Edit an organization's name
 
-Nodes should be under organizations
+Nodes should be under organizations:
 
 * `/OOOO/nodes/NNNN` Show a node content: name + children. This URL is also used for destroy
 * `/OOOO/nodes/NNNN/edit` Edit a node's name
 * `/OOOO/nodes/NNNN/new` Create a new node under this one
+
+`OOOO` and `NNNN` are object's IDs.
 
 ## Spec
 
